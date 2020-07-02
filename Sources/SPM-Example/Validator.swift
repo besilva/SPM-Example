@@ -1,7 +1,7 @@
 import Foundation
 
-struct Validator {
-    func validateCPF(document: String) -> Bool {
+public struct Validator {
+    public func validateCPF(document: String) -> Bool {
         
         let cpf = document.replacingOccurrences(of: ".", with: "").replacingOccurrences(of: "-", with: "")
         guard cpf.count == 11 else { return false }

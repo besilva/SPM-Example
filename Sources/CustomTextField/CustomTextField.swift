@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CustomTextField: UIView {
+public class CustomTextField: UIView {
 
     @IBOutlet private var contentView: UIView!
     @IBOutlet weak var textField: UITextField!
