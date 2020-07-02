@@ -1,6 +1,9 @@
 import Foundation
 
 public struct Validator {
+    
+    public init() { }
+    
     public func validateCPF(document: String) -> Bool {
         
         let cpf = document.replacingOccurrences(of: ".", with: "").replacingOccurrences(of: "-", with: "")

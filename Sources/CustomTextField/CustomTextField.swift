@@ -61,13 +61,13 @@ public class CustomTextField: UIView {
         self.textField.textColor = color
     }
         
-    var delegate: UITextFieldDelegate? {
+    public var delegate: UITextFieldDelegate? {
         didSet {
             self.textField.delegate = self.delegate
         }
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         self.commonInit()
     }
