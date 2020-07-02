@@ -1,4 +1,4 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -21,9 +21,9 @@ let package = Package(
         .target(
             name: "SPM-Example",
             dependencies: []
-//            resources: [
-//                .process("spm.jpg")
-//            ]
+            resources: [
+                .process("spm.jpg")
+            ]
         ),
         .testTarget(
             name: "SPM-ExampleTests",
